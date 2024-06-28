@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>WebPage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top-section">
+      <h1 class="title">APPLES OR BANANAS?</h1>
+    </div>
+    <div class="div-fruits">
+      <div class="div-apples">
+        <img
+          class="image-apple"
+          src="images/apple.jpg"
+          alt="Picture of Apple"
+        />
+        <button class="b-apples" onclick="isClicked()">APPLES</button>
+      </div>
+      <div class="div-bananas">
+        <img
+          class="image-banana"
+          src="images/banana-fruit.jpg"
+          alt="Picture of Banana"
+        />
+        <button class="b-bananas" onClick="onclick=isClicked()">BANANAS</button>
+      </div>
+    </div>
+    <div class="bottom-section">
+      <form id="input-form">
+        <input
+          id="input-enter-name"
+          type="text"
+          placeholder="Enter Your Name Here:"
+        />
+        <button class="b-submit" type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="fruitHandler.js"></script>
+  </body>
+</html>

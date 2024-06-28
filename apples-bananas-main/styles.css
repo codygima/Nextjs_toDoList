@@ -1,0 +1,142 @@
+body {
+  background: linear-gradient(270deg, #8b0202, #ffe135);
+  padding: 30px;
+}
+.title {
+  font-family: MuseoModerno;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+.div-fruits {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 50px;
+}
+
+.div-apples,
+.div-bananas {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  /*border-style: solid;*/
+  flex-direction: column;
+}
+
+.div-apples {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 200px;
+}
+.div-bananas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.b-apples,
+.b-bananas {
+  color: white;
+  margin-top: 20px;
+  border-style: solid;
+  border-color: #b55315;
+  font-family: MuseoModerno;
+}
+.b-apples {
+  background-color: #8b0202;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: medium;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: background-color 0.5s, color 1s;
+}
+.b-apples:hover {
+  opacity: 0.8;
+  background-color: white;
+  color: #8b0202;
+}
+.b-apples:active {
+  opacity: 0.5;
+  color: #882929;
+  background-color: white;
+  border-color: #b55315;
+}
+.b-bananas {
+  background-color: #ffe135;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: medium;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: background-color 0.5s, color 1s;
+}
+.b-bananas:hover {
+  opacity: 0.8;
+  background-color: white;
+  color: #ffe135;
+}
+.b-bananas:active {
+  opacity: 0.5;
+  color: #f8e788;
+  background-color: white;
+  border-color: #b55315;
+}
+
+img {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  border-radius: 100px;
+}
+.bottom-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 60px;
+}
+#input-enter-name {
+  font-size: 20px;
+  font-family: MuseoModerno;
+  border-radius: 5px;
+  border-style: solid;
+}
+.b-submit {
+  background-color: gray;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: MuseoModerno;
+  border-style: solid;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.5s, color 1s;
+}
+.b-submit:hover {
+  opacity: 0.8;
+  background-color: white;
+  color: gray;
+}
+.b-submit:active {
+  opacity: 0.5;
+  color: #c6c5bf;
+  background-color: white;
+  border-color: black;
+}
