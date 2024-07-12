@@ -17,6 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="cupcake">
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className={"${inter.className} text-slate-100 mx-auto p-4"}>
         {children}
       </body>
