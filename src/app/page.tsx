@@ -17,7 +17,6 @@ async function deleteTodo(id: string) {
 async function toggleTodo(id: string, complete: boolean) {
   "use server";
   await prisma.todo.update({ where: { id }, data: { complete } });
-  revalidatePath("/");
 }
 
 export default async function Home() {
@@ -38,13 +37,12 @@ export default async function Home() {
         {todos.map((todo) => (
           <TodoItem
             key={todo.id}
-            {...todo}
+            id={todo.id}
+            title={todo.title}
             complete={todo.complete}
             toggleTodo={toggleTodo}
             deleteTodo={deleteTodo}
-          >
-            {todo.title}
-          </TodoItem>
+          ></TodoItem>
         ))}
       </ul>
     </>
