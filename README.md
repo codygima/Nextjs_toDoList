@@ -28,6 +28,8 @@ code .
 
 To do this simply right-click inside the Workspace column on the left side of VS Code, then select `New File`.
 
+### In the terminal within VS Code run the rest of the commands:
+
 5. Validate the Prisma Schema:
 ```bash
 npx prisma migrate dev --name init
