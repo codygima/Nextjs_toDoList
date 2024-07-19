@@ -20,15 +20,15 @@ git clone https://github.com/codygima/Nextjs_toDoList.git
 ```bash
 cd Nextjs_toDoList
 ```
-3. Open Visual Studio Code:
+3. Create a `.env` file:
 ```bash
-code .
+cp sample.env .env
 ```
-4. Create a `.env` file:
 
-To do this simply right-click inside the Workspace column on the left side of VS Code, then select `New File`.
-
-### In the terminal within VS Code run the rest of the commands:
+4. Install Dependencies:
+```bash
+npm install
+```
 
 5. Validate the Prisma Schema:
 ```bash
